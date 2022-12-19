@@ -1,5 +1,6 @@
 import { Component } from "react";
 import './Home.css';
+import { Link } from "react-router-dom";
 
 
 class Home extends Component {
@@ -9,7 +10,9 @@ class Home extends Component {
             <body>
                 <header>
                     <h1>Welcome to my facebook account</h1>,
-                    <button className="btn btn-primary" routerLink="logout">Logout</button>
+                    <Link to="/">
+                        <button className="btn btn-primary" routerLink="logout">Logout</button>
+                    </Link>
                 </header>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, consequuntur ipsum commodi adipisci iure

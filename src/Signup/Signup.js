@@ -1,5 +1,6 @@
 import { Component } from "react";
 import './Signup.css';
+import { Link } from 'react-router-dom';
 
 class Signup extends Component {
 
@@ -25,15 +26,19 @@ class Signup extends Component {
                         <input className="input" type="text" placeholder="New password" name="password" minlength="8" maxlength="12" />
                     </div >
                     <div>
-                        <button className="button">Sign Up</button>
+                        <Link to="/">
+                            <button className="button">Sign Up</button>
+                        </Link>
                     </div >
                     <div>
-                        <a className="link">Already have an account?</a>
+                        <Link to="/">
+                            <a className="link">Already have an account?</a>
+                        </Link>
                     </div >
                 </form >
             </body >
         );
     }
-} 
+}
 
 export default Signup;
