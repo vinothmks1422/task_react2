@@ -23,7 +23,7 @@ class Signup extends Component {
                         <input className="input" type="email" placeholder="Email address" name="email" />
                     </div>
                     <div>
-                        <input className="input" type="text" placeholder="New password" name="password" minlength="8" maxlength="12" />
+                        <input className="input" type="text" placeholder="Create password" name="password" minlength="8" maxlength="12" />
                     </div >
                     <div>
                         <Link to="/">
